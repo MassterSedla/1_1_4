@@ -3,7 +3,7 @@ package jm.task.core.jdbc.util;
 import java.sql.*;
 
 public class Util {
-    // реализуйте настройку соеденения с БД
+    // реализуйте настройку соеденения с БД Hibernate
     private static final String URL = "jdbc:mysql://localhost:3306/db_kata_1_1_4";
     private static final String USERNAME = "root";
     private static final String PASSWORD = "Koroleva1!";
