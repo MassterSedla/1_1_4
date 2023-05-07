@@ -11,12 +11,7 @@ public class Main {
 
         UserServiceImpl table = new UserServiceImpl();
         table.createUsersTable();
-        for (int i = 0; i < 4; i++) {
-            User user = new User("q" + i, "Q" + i * 10, (byte) i);
-            table.saveUser(user.getName(), user.getLastName(), user.getAge());
-        }
-        table.getAllUsers().forEach(System.out::println);
-        table.cleanUsersTable();
+        table.saveUser("qq", "QQ", (byte) 4);
         table.dropUsersTable();
     }
 }
