@@ -1,9 +1,7 @@
 package jm.task.core.jdbc;
 
-import jm.task.core.jdbc.dao.UserDaoJDBCImpl;
 import jm.task.core.jdbc.model.User;
 import jm.task.core.jdbc.service.UserServiceImpl;
-import jm.task.core.jdbc.util.Util;
 
 public class Main {
     public static void main(String[] args) {
@@ -11,7 +9,12 @@ public class Main {
 
         UserServiceImpl table = new UserServiceImpl();
         table.createUsersTable();
-        table.saveUser("qq", "QQ", (byte) 4);
+        table.saveUser("sss", "213", (byte) 7);
+        table.saveUser("32e", "213", (byte) 7);
+        table.saveUser("vbth", "213", (byte) 7);
+        table.removeUserById(1);
+        table.cleanUsersTable();
+        table.getAllUsers().forEach(System.out::println);
         table.dropUsersTable();
     }
 }
