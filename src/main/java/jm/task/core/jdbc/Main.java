@@ -14,7 +14,8 @@ public class Main {
         table.saveUser("vbth", "213", (byte) 7);
         table.removeUserById(1);
         table.cleanUsersTable();
-        table.getAllUsers().forEach(System.out::println);
-        table.dropUsersTable();
+        System.out.println(table.getAllUsers().size());
+        //table.getAllUsers().forEach(System.out::println);
+        //table.dropUsersTable();
     }
 }
